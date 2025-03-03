@@ -9,6 +9,8 @@ Internationalization is ready with 2 languages:
 - English (base)
 - French (traduction)
 
+![Marciblocks Carousel front view](/images/marciblocks-carousel-front.png)
+
 ## Features
 
 ### Editor
@@ -65,6 +67,8 @@ npm run build
 ```
 
 Happy coding ! 😁
+
+---
 
 ### Getting started
 
