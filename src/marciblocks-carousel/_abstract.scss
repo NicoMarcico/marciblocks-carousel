@@ -1,0 +1,5 @@
+// px to rem conversion based on a 16px root font-size
+@function px-to-rem($size) {
+	$value: calc($size / 16px);
+	@return #{$value}rem;
+}

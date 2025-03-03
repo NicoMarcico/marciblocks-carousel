@@ -1,0 +1,208 @@
+# Copyright (C) 2025 Marcico
+# This file is distributed under the GPL-2.0-or-later.
+msgid ""
+msgstr ""
+"Project-Id-Version: Marciblocks Carousel 0.1.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/marciblocks-carousel\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2025-02-28T19:57:50+00:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.11.0\n"
+"X-Domain: marciblocks-carousel\n"
+
+#. Plugin Name of the plugin
+#: marciblocks-carousel.php
+msgid "Marciblocks Carousel"
+msgstr ""
+
+#. Description of the plugin
+#: marciblocks-carousel.php
+msgid "Carousel of images with thumbnails tabs and controls."
+msgstr ""
+
+#. Author of the plugin
+#: marciblocks-carousel.php
+msgid "Marcico"
+msgstr ""
+
+#: marciblocks-carousel.php:125
+msgid "carousel"
+msgstr ""
+
+#: marciblocks-carousel.php:150
+msgid "slide"
+msgstr ""
+
+#: marciblocks-carousel.php:151
+msgid "of"
+msgstr ""
+
+#: marciblocks-carousel.php:180
+msgid "Previous slide"
+msgstr ""
+
+#: marciblocks-carousel.php:185
+msgid "Next slide"
+msgstr ""
+
+#: marciblocks-carousel.php:224
+msgid "Slide"
+msgstr ""
+
+#: build/marciblocks-carousel-item/index.js:1
+#: src/marciblocks-carousel-item/toolbar.js:23
+msgid "Edit image"
+msgstr ""
+
+#: build/marciblocks-carousel-item/index.js:1
+#: src/marciblocks-carousel-item/block.js:20
+msgid "Picture"
+msgstr ""
+
+#: build/marciblocks-carousel-item/index.js:1
+#: src/marciblocks-carousel-item/block.js:21
+msgid "Select image"
+msgstr ""
+
+#: build/marciblocks-carousel-item/index.js:1
+#: src/marciblocks-carousel-item/block.js:29
+msgid "Import"
+msgstr ""
+
+#: build/marciblocks-carousel/index.js:1
+#: src/marciblocks-carousel/toolbar.js:24
+msgid "Edit images"
+msgstr ""
+
+#: build/marciblocks-carousel/index.js:1
+#: src/marciblocks-carousel/inspector.js:28
+msgid "Image adjustment"
+msgstr ""
+
+#: build/marciblocks-carousel/index.js:1
+#: src/marciblocks-carousel/inspector.js:31
+msgid "Type of adjustment"
+msgstr ""
+
+#: build/marciblocks-carousel/index.js:1
+#: src/marciblocks-carousel/inspector.js:35
+msgid "None"
+msgstr ""
+
+#: build/marciblocks-carousel/index.js:1
+#: src/marciblocks-carousel/inspector.js:39
+msgid "Cover"
+msgstr ""
+
+#: build/marciblocks-carousel/index.js:1
+#: src/marciblocks-carousel/inspector.js:43
+msgid "Contain"
+msgstr ""
+
+#: build/marciblocks-carousel/index.js:1
+#: src/marciblocks-carousel/inspector.js:47
+msgid "Fill"
+msgstr ""
+
+#: build/marciblocks-carousel/index.js:1
+#: src/marciblocks-carousel/inspector.js:55
+msgid "Display ratio"
+msgstr ""
+
+#: build/marciblocks-carousel/index.js:1
+#: src/marciblocks-carousel/inspector.js:84
+msgid "Border radius"
+msgstr ""
+
+#: build/marciblocks-carousel/index.js:1
+#: src/marciblocks-carousel/inspector.js:87
+msgid "Radius"
+msgstr ""
+
+#: build/marciblocks-carousel/index.js:1
+#: src/marciblocks-carousel/inspector.js:104
+msgid "Texts"
+msgstr ""
+
+#: build/marciblocks-carousel/index.js:1
+#: src/marciblocks-carousel/inspector.js:107
+msgid "Caption"
+msgstr ""
+
+#: build/marciblocks-carousel/index.js:1
+#: src/marciblocks-carousel/inspector.js:112
+msgid "Description"
+msgstr ""
+
+#: build/marciblocks-carousel/index.js:1
+#: src/marciblocks-carousel/inspector.js:119
+msgid "Colors"
+msgstr ""
+
+#: build/marciblocks-carousel/index.js:1
+#: src/marciblocks-carousel/inspector.js:124
+msgid "Highlight color"
+msgstr ""
+
+#: build/marciblocks-carousel/index.js:1
+#: src/marciblocks-carousel/inspector.js:129
+msgid "Background color"
+msgstr ""
+
+#: build/marciblocks-carousel/index.js:1
+#: src/marciblocks-carousel/inspector.js:134
+msgid "Caption color"
+msgstr ""
+
+#: build/marciblocks-carousel/index.js:1
+#: src/marciblocks-carousel/inspector.js:139
+msgid "Description color"
+msgstr ""
+
+#: build/marciblocks-carousel/index.js:1
+#: src/marciblocks-carousel/block.js:183
+#: src/marciblocks-carousel/index.js:11
+msgid "Carousel"
+msgstr ""
+
+#: build/marciblocks-carousel/index.js:1
+#: src/marciblocks-carousel/block.js:184
+msgid "Select images"
+msgstr ""
+
+#: build/marciblocks-carousel/index.js:1
+#: src/marciblocks-carousel/block.js:187
+msgid "Select"
+msgstr ""
+
+#: build/marciblocks-carousel/index.js:1
+#: src/marciblocks-carousel/index.js:12
+msgid "Carousel of images with thumbnails."
+msgstr ""
+
+#: build/marciblocks-carousel/index.js:1
+#: src/marciblocks-carousel/index.js:16
+msgid "Carousel, Images, Gallery"
+msgstr ""
+
+#: build/marciblocks-carousel-item/block.json
+#: src/marciblocks-carousel-item/block.json
+msgctxt "block title"
+msgid "Carousel image block"
+msgstr ""
+
+#: build/marciblocks-carousel-item/block.json
+#: src/marciblocks-carousel-item/block.json
+msgctxt "block keyword"
+msgid "Carousel, Image"
+msgstr ""
+
+#: build/marciblocks-carousel-item/block.json
+#: src/marciblocks-carousel-item/block.json
+msgctxt "block description"
+msgid "Simple image block, child of the carousel block."
+msgstr ""

@@ -1,0 +1,40 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 2,
+  "name": "marciblocks/carousel-item",
+  "version": "1.0",
+  "title": "Carousel image block",
+  "category": "media",
+  "keywords": [
+    "Carousel, Image"
+  ],
+  "icon": "format-image",
+  "description": "Simple image block, child of the carousel block.",
+  "example": {},
+  "supports": {
+    "html": false
+  },
+  "parent": [
+    "marciblocks/carousel"
+  ],
+  "attributes": {
+    "pictureId": {
+      "type": "number",
+      "default": null
+    },
+    "pictureUrl": {
+      "type": "string",
+      "source": "attribute",
+      "attribute": "src",
+      "selector": "img"
+    },
+    "pictureAlt": {
+      "type": "string",
+      "source": "attribute",
+      "attribute": "alt",
+      "selector": "img"
+    }
+  },
+  "textdomain": "marciblocks-carousel",
+  "editorScript": "file:./index.js"
+}

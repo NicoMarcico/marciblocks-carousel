@@ -1,0 +1,74 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 2,
+  "name": "marciblocks/carousel",
+  "version": "1.0",
+  "category": "media",
+  "icon": "images-alt2",
+  "example": {},
+  "supports": {
+    "html": false
+  },
+  "allowedBlocks": [
+    "marciblocks/carousel-item"
+  ],
+  "attributes": {
+    "imagesIds": {
+      "type": "array",
+      "default": []
+    },
+    "images": {
+      "type": "array",
+      "default": []
+    },
+    "imageFit": {
+      "type": "string",
+      "default": "cover"
+    },
+    "isCaption": {
+      "type": "boolean",
+      "default": false
+    },
+    "isDescription": {
+      "type": "boolean",
+      "default": false
+    },
+    "isRadius": {
+      "type": "boolean",
+      "default": false
+    },
+    "radius": {
+      "type": "integer",
+      "default": 14
+    },
+    "aspectRatio": {
+      "type": "string",
+      "default": "16/9"
+    },
+    "highlightColor": {
+      "type": "string",
+      "default": "#00B308"
+    },
+    "backgroundColor": {
+      "type": "string",
+      "default": ""
+    },
+    "captionColor": {
+      "type": "string",
+      "default": "white"
+    },
+    "descriptionColor": {
+      "type": "string",
+      "default": ""
+    },
+    "carouselNumber": {
+      "type": "integer",
+      "default": 0
+    }
+  },
+  "textdomain": "marciblocks-carousel",
+  "viewScript": "file:./frontend.js",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css"
+}

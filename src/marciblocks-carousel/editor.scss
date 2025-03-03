@@ -1,0 +1,99 @@
+@use "abstract" as a;
+
+.wp-block-marciblocks-carousel {
+	///////////////////////////////////////////////////
+	/// TABS
+	/// Here the markup is Gutenberg's inner blocks one
+	//////////////////////////////////////////////////
+
+	// Inner blocks = front marciblocks-carousel-tabs
+	.block-editor-inner-blocks {
+		.block-editor-block-list__layout {
+			display: grid;
+			// Calculate the number of columns based on available space
+			grid-template-columns: repeat(auto-fill, minmax(a.px-to-rem(100px), 1fr));
+			justify-content: start;
+			gap: a.px-to-rem(8px);
+		}
+	}
+
+	// inner blocks item = front marciblocks-carousel-tabs__tab
+	.wp-block-marciblocks-carousel-item {
+		position: relative;
+		width: 100%;
+		max-width: a.px-to-rem(150px);
+		padding: 0;
+		border: 0;
+		border-radius: var(--carousel-custom-radius);
+		aspect-ratio: var(--carousel-custom-ratio);
+		background-color: var(--carousel-custom-background-color);
+		// overflow: visible;
+		cursor: auto;
+
+		&:first-child::after {
+			content: "";
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			border-radius: inherit;
+			box-shadow: 0 0 0 3px var(--carousel-custom-highlight-color);
+		}
+
+		&.is-selected::after {
+			border-radius: var(--carousel-custom-radius);
+		}
+
+		img {
+			display: block;
+			width: 100%;
+			height: 100%;
+			border-radius: inherit;
+			object-fit: var(--carousel-custom-fit);
+		}
+	}
+
+	///////////////////////////////////////////////////
+	/// DESCRIPTIONS
+	//////////////////////////////////////////////////
+
+	.marciblocks-carousel-descs {
+		&__desc {
+			display: block;
+			color: var(--carousel-custom-description-color);
+		}
+	}
+
+	///////////////////////////////////////////////////
+	/// ITEMS
+	/// Here we have the same markup as in front
+	//////////////////////////////////////////////////
+
+	.marciblocks-carousel-items {
+		border-radius: var(--carousel-custom-radius);
+		aspect-ratio: var(--carousel-custom-ratio);
+		background-color: var(--carousel-custom-background-color);
+
+		&__item {
+			opacity: 1;
+
+			img {
+				object-fit: var(--carousel-custom-fit);
+			}
+
+			h3 {
+				color: var(--carousel-custom-caption-color);
+			}
+		}
+	}
+
+	///////////////////////////////////////////////////
+	/// CONTROLS
+	/// Here we have the same markup as in front
+	//////////////////////////////////////////////////
+
+	.marciblocks-carousel-controls__control {
+		cursor: auto;
+	}
+}
