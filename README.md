@@ -4,6 +4,11 @@ Marciblocks Carousel is a WordPress Gutenberg block plugin.
 
 It's a simple, lightweight, high-performance image carousel that includes its own "image" block for nested blocks creation.
 
+Internationalization is ready with 2 languages:
+
+- English (base)
+- French (traduction)
+
 ## Features
 
 ### Editor
@@ -35,15 +40,44 @@ You are free to use, modify and redistribute it under the terms of this license.
 
 ## Installation
 
-### Dev environment
+### Development
 
-This Gutenberg block plugin is built using `@wordpress/create-block` toolkit; It involves notably NPM and WebPack, so in order to run the development mode, ensure you have Node.js installed. I personaly use Yarn as a package manager but you can use npm as well, of course.
+This Gutenberg block plugin is built using `@wordpress/create-block` toolkit; It involves Node.js and WebPack, so for development purposes, make sure you have Node.js installed.
 
-In the project root you can then run :
+Clone this repository, then at the root of the project you can run the following commands using your favorite package manager.
 
-- `yarn install` **FIRST** to install dependencies (it will create *node_modules* folder)
-- `yarn start` to start watching files and compiling **JS** ones and transpiling **SCSS** ones
-- `yarn build` to prepare the *build* folder files for deployment (minification and so on)
+Install dependencies (it will create *node_modules* folder):
+
+```Bash
+npm install
+```
+
+Start watching files and compiling **JS** ones and transpiling **SCSS** ones:
+
+```Bash
+npm start
+```
+
+Compile/transpile && prepare `/build/` directory files for deployment (compression and so on)
+
+```Bash
+npm run build
+```
+
+Happy coding ! 😁
+
+### Getting started
+
+You can use the plugin as is. The `/build/` directory is available for this purpose. All you need to do is:
+
+1. Download the zip file of this repository
+2. Extract the contents of the zip into your `/plugins/` directory
+3. For the sake of efficiency, delete all directories/files except:
+   - `/build/` directory
+   - `/languages/` directory
+   - `/marciblocks-carousel.php` file
+4. Activate the Marciblocks Carousel in your wp-admin dashboard
+5. Add Carousel blocks in any post/page via the Gutenberg editor
 
 Enjoy! 😉
 
@@ -51,15 +85,15 @@ Enjoy! 😉
 
 ### Rendering in the editor
 
-The carousel renders WYSIWYG in the editor, but without live navigation for performance reasons; As a result, only the first tab sees its data displayed (main image, caption, description) and the control and tab buttons don't work.
+The carousel renders **WYSIWYG** in the editor, but without live navigation for performance reasons; As a result, only the first tab sees its data displayed (main image, caption, description) and the control and tab buttons don't work.
 
-![alt text](image-4.png)
+![Marciblocks Carousel editor view](/images/marciblocks-carousel-editor.png)
 
 ---
 
 ### Accessibility
 
-A unique identifier per article/page is embedded in the carousel container markup so you can add as many carousels as you like; each carousel has its own target used as an accessibility scope.
+A unique identifier per carousel, among those created in the post/page, is embedded in the container markup, so that each carousel has its own target used as an accessibility scope. You can add as many carousels as you like per post/page without compromising accessibility.
 
 ```HTML
 <!-- carousel N°1 -->
@@ -87,4 +121,4 @@ A unique identifier per article/page is embedded in the carousel container marku
         ...
 ```
 
-In the back-end, a subscription is made and an array of carousels present in the post/page is kept up to date, so that when, for example, the first carousel of the page is deleted, the second one becomes the first... This can be helpful for e.g. automatic numbering in titles.
+In the back-end, a subscription is made to the block-editor store; An array of carousels present in the post/page is kept up to date, so is the props attribute carouselNumber using its index for identification. So that when, for example, the first carousel of the page is deleted, the second one becomes the first... This can be helpful for e.g. automatic numbering in text.
